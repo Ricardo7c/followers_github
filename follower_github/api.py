@@ -56,3 +56,4 @@ def following(username: str, token: Optional[str]=None) -> List[str]:
         url = response.links.get('next', {}).get('url')
     
     return lista
+

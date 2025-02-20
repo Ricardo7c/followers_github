@@ -1,11 +1,20 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "follower_github"
-version = "0.0.5"
+version = "0.1.0"
 description = "Uma biblioteca para listar seguidores ou perfis seguidos no GitHub."
 authors = [{name = "Ricardo7c", email = "ricardo7c@hotmail.com"}]
+readme = "README.md"
 license = {file = "LICENSE"}
-dependencies = ["requests"]
+requires-python = ">=3.7"
+dependencies = [
+    "requests>=2.31.0",
+    "urllib3>=1.26.0"
+]
+
+
+[tool.setuptools]
+packages = ["follower_github"]

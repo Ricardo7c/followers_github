@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "followers_github"
+version = "0.1.0"
+description = "Uma biblioteca para listar seguidores ou perfis seguidos no GitHub."
+authors = [{name = "Ricardo7c", email = "ricardo7c@hotmail.com"}]
+license = {file = "LICENSE"}
+dependencies = ["requests"]
